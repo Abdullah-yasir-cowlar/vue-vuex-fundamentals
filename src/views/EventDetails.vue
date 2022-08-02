@@ -10,7 +10,12 @@
 // import EventService from '@/services/EventService.js'
 
 export default {
-    props: ['id'],
+    props: {
+        id: {
+            type: String,
+            required: true
+        }
+    },
     // data() {
     //     return {
     //         event: null
@@ -18,7 +23,7 @@ export default {
     // },
     computed: {
         event() {
-            return this.$store.state.event
+            return this.$store.state.eventDetails
         }
     },
     created() {

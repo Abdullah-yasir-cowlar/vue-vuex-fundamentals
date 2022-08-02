@@ -38,14 +38,22 @@ export default createStore({
                     console.log(error)
                 })
         },
-        fetchSingleEvent({ commit }, id) {
-            EventService.getEvents(id)
-                .then(response => {
-                    commit('SET_EVENT_DETAILS', response.data)
-                })
-                .catch(error => {
-                    console.log(error)
-                })
+        fetchSingleEvent({ commit, state }, id) {
+            // check if we have it already in the store
+            const existingEvent = state.events.find(ev => ev.id === id)
+
+            console.log({ existingEvent })
+            if (existingEvent) {
+                commit('SET_EVENT_DETAILS', existingEvent)
+            } else {
+                EventService.getEvents(id)
+                    .then(response => {
+                        commit('SET_EVENT_DETAILS', response.data)
+                    })
+                    .catch(error => {
+                        console.log(error)
+                    })
+            }
         }
     },
     modules: {}
