@@ -1,44 +1,104 @@
 {
-    "events": [
-        {
-            "id": "123",
-            "category": "animal welfare",
-            "title": "Cat Adoption Day",
-            "description": "Find your new feline friend at this event.",
-            "location": "Meow Town",
-            "date": "January 28, 2022",
-            "time": "12:00",
-            "organizer": "Kat Laydee"
-        },
-        {
-            "id": "456",
-            "category": "food",
-            "title": "Community Gardening",
-            "description": "Join us as we tend to the community edible plants.",
-            "location": "Flora City",
-            "date": "March 14, 2022",
-            "time": "10:00",
-            "organizer": "Fern Pollin"
-        },
-        {
-            "id": "789",
-            "category": "sustainability",
-            "title": "Beach Cleanup",
-            "description": "Help pick up trash along the shore.",
-            "location": "Playa Del Carmen",
-            "date": "July 22, 2022",
-            "time": "11:00",
-            "organizer": "Carey Wales"
-        },
-        {
-            "id": "0d327f0f-0091-4bfd-9848-27e645bebd2d",
-            "category": "nature",
-            "title": "Natural Event",
-            "description": "This event is about nature",
-            "location": "Amazon",
-            "date": "20-20-20",
-            "time": "20:20",
-            "organizer": "John Doe"
-        }
-    ]
+  "events": [
+    {
+      "id": "123",
+      "category": "animal welfare",
+      "title": "Cat Adoption Day",
+      "description": "Find your new feline friend at this event.",
+      "location": "Meow Town",
+      "date": "January 28, 2022",
+      "time": "12:00",
+      "organizer": "Kat Laydee"
+    },
+    {
+      "id": "456",
+      "category": "food",
+      "title": "Community Gardening",
+      "description": "Join us as we tend to the community edible plants.",
+      "location": "Flora City",
+      "date": "March 14, 2022",
+      "time": "10:00",
+      "organizer": "Fern Pollin"
+    },
+    {
+      "id": "789",
+      "category": "sustainability",
+      "title": "Beach Cleanup",
+      "description": "Help pick up trash along the shore.",
+      "location": "Playa Del Carmen",
+      "date": "July 22, 2022",
+      "time": "11:00",
+      "organizer": "Carey Wales"
+    },
+    {
+      "id": "0d327f0f-0091-4bfd-9848-27e645bebd2d",
+      "category": "nature",
+      "title": "Natural Event",
+      "description": "This event is about nature",
+      "location": "Amazon",
+      "date": "20-20-20",
+      "time": "20:20",
+      "organizer": "John Doe"
+    },
+    {
+      "id": "b8595e5c-461c-45fd-889f-54cfa17ec012",
+      "category": "housing",
+      "title": "Housing event",
+      "description": "This event is about housing",
+      "location": "Lahore",
+      "date": "30-12-22",
+      "time": "12:12",
+      "organizer": "John Doe"
+    },
+    {
+      "id": "95eb7f73-3213-430d-8f25-fe3a622515cd",
+      "category": "community",
+      "title": "community service",
+      "description": "provide community service",
+      "location": "local",
+      "date": "lsdf",
+      "time": "lskdf",
+      "organizer": "John Doe"
+    },
+    {
+      "id": "k4Mz9nV",
+      "organizer": "",
+      "category": "food",
+      "title": "fhfgh",
+      "description": "fghdfg",
+      "location": "hfghdfgh",
+      "date": "fghfdg",
+      "time": "hfdghf"
+    },
+    {
+      "id": "SZvDedv",
+      "organizer": "",
+      "category": "food",
+      "title": "fhfgh",
+      "description": "fghdfg",
+      "location": "hfghdfgh",
+      "date": "fghfdg",
+      "time": "hfdghf"
+    },
+    {
+      "id": "783d96b7-b1f5-4740-8af4-311c76e094da",
+      "category": "community",
+      "title": "fghfg",
+      "description": "hfghfg",
+      "location": "ghfghf",
+      "date": "fghfgh",
+      "time": "fdght",
+      "organizer": "John Doe"
+    },
+    {
+      "id": "beafc63e-5523-4550-8d1a-782f8fb1722c",
+      "category": "housing",
+      "title": "fsdaf34erd",
+      "description": "sdfsdf",
+      "location": "sdfsdf",
+      "date": "efd",
+      "time": "sdf",
+      "organizer": "John Doe"
+    }
+  ]
 }

@@ -77,8 +77,11 @@ export default {
     },
     methods: {
         onSubmit() {
-            this.event.id = uuidv4()
-            this.event.organizer = this.$store.state.user
+            const event = {
+                ...this.event,
+                id: uuidv4(),
+                organizer: this.$store.state.user
+            }
 
             // direct commit
             // EventService.postEvent(this.event)
@@ -91,7 +94,12 @@ export default {
             //     })
 
             // dipatching action
-            this.$store.dispatch('createEvent', this.event)
+            this.$store.dispatch('createEvent', event).then(() => {
+                this.$router.push({
+                    name: 'EventDetails',
+                    params: { id: event.id }
+                })
+            })
         }
     }
 }

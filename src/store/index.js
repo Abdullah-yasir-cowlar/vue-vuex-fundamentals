@@ -20,7 +20,7 @@ export default createStore({
     },
     actions: {
         createEvent({ commit }, event) {
-            EventService.postEvent(this.event)
+            EventService.postEvent(event)
                 .then(() => {
                     // add event to the store
                     commit('ADD_EVENT', event)
@@ -42,11 +42,10 @@ export default createStore({
             // check if we have it already in the store
             const existingEvent = state.events.find(ev => ev.id === id)
 
-            console.log({ existingEvent })
             if (existingEvent) {
                 commit('SET_EVENT_DETAILS', existingEvent)
             } else {
-                EventService.getEvents(id)
+                EventService.getEvent(id)
                     .then(response => {
                         commit('SET_EVENT_DETAILS', response.data)
                     })

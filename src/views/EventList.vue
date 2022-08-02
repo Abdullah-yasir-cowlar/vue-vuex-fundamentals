@@ -21,7 +21,6 @@ export default {
     // },
     computed: {
         events() {
-            console.log(this.$store.state)
             return this.$store.state.events
         }
     },
